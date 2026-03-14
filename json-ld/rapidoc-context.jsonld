@@ -1,0 +1,85 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "rapidoc": "https://rapidocweb.com/api.html#",
+    "RapiDocComponent": {
+      "@id": "rapidoc:rapi-doc",
+      "@context": {
+        "spec-url": "https://schema.org/url",
+        "heading-text": "https://schema.org/name",
+        "theme": "https://schema.org/cssSelector",
+        "render-style": "https://schema.org/encodingFormat",
+        "layout": "https://schema.org/encodingFormat",
+        "primary-color": "https://schema.org/color",
+        "bg-color": "https://schema.org/color",
+        "text-color": "https://schema.org/color",
+        "header-color": "https://schema.org/color",
+        "nav-bg-color": "https://schema.org/color",
+        "nav-text-color": "https://schema.org/color",
+        "regular-font": "https://schema.org/fontFamily",
+        "mono-font": "https://schema.org/fontFamily",
+        "font-size": "https://schema.org/cssSelector",
+        "sort-tags": "https://schema.org/orderQuantity",
+        "sort-endpoints-by": "https://schema.org/orderQuantity"
+      }
+    },
+    "Configuration": {
+      "@id": "rapidoc:attributes",
+      "@context": {
+        "show-info": "https://schema.org/actionOption",
+        "show-header": "https://schema.org/actionOption",
+        "show-components": "https://schema.org/actionOption",
+        "allow-try": "https://schema.org/actionOption",
+        "allow-authentication": "https://schema.org/actionOption",
+        "allow-search": "https://schema.org/actionOption",
+        "allow-server-selection": "https://schema.org/actionOption",
+        "allow-spec-url-load": "https://schema.org/actionOption",
+        "allow-spec-file-load": "https://schema.org/actionOption",
+        "allow-spec-file-download": "https://schema.org/actionOption",
+        "persist-auth": "https://schema.org/actionOption",
+        "fill-request-fields-with-example": "https://schema.org/actionOption",
+        "update-route": "https://schema.org/actionOption"
+      }
+    },
+    "Authentication": {
+      "@id": "rapidoc:authentication",
+      "@context": {
+        "api-key-name": "https://schema.org/identifier",
+        "api-key-location": "https://schema.org/category",
+        "api-key-value": "https://schema.org/accessCode",
+        "fetch-credentials": "https://schema.org/actionOption"
+      }
+    },
+    "Schema": {
+      "@id": "rapidoc:schema",
+      "@context": {
+        "schema-style": "https://schema.org/encodingFormat",
+        "schema-expand-level": "https://schema.org/position",
+        "schema-description-expanded": "https://schema.org/actionOption",
+        "default-schema-tab": "https://schema.org/category",
+        "schema-hide-read-only": "https://schema.org/actionOption",
+        "schema-hide-write-only": "https://schema.org/actionOption"
+      }
+    },
+    "Slots": {
+      "@id": "rapidoc:slots",
+      "@context": {
+        "logo": "https://schema.org/image",
+        "header": "https://schema.org/WPHeader",
+        "footer": "https://schema.org/WPFooter",
+        "nav-logo": "https://schema.org/image",
+        "overview": "https://schema.org/description"
+      }
+    },
+    "Events": {
+      "@id": "rapidoc:events",
+      "@context": {
+        "spec-loaded": "https://schema.org/Event",
+        "before-try": "https://schema.org/Event",
+        "after-try": "https://schema.org/Event",
+        "api-server-change": "https://schema.org/Event",
+        "before-render": "https://schema.org/Event"
+      }
+    }
+  }
+}

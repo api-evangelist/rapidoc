@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/rapidoc/blob/main/json-schema/rapidoc-configuration.json",
+  "title": "RapiDoc Web Component Configuration",
+  "description": "Configuration attributes for the rapi-doc custom HTML element that renders OpenAPI specifications as interactive API documentation.",
+  "type": "object",
+  "properties": {
+    "spec-url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the OpenAPI specification to render."
+    },
+    "update-route": {
+      "type": "boolean",
+      "default": true,
+      "description": "When true, updates the browser URL hash as the user navigates through the API documentation."
+    },
+    "route-prefix": {
+      "type": "string",
+      "description": "Prefix to add to route paths in the URL hash."
+    },
+    "sort-tags": {
+      "type": "boolean",
+      "default": false,
+      "description": "Sort tags alphabetically."
+    },
+    "sort-endpoints-by": {
+      "type": "string",
+      "enum": ["path", "method", "summary", "none"],
+      "default": "path",
+      "description": "Sort order for endpoints within each tag."
+    },
+    "heading-text": {
+      "type": "string",
+      "description": "Custom heading text to display in the header."
+    },
+    "goto-path": {
+      "type": "string",
+      "description": "Initial path to navigate to when the component loads."
+    },
+    "fill-request-fields-with-example": {
+      "type": "boolean",
+      "default": true,
+      "description": "Pre-fill request fields with example values from the spec."
+    },
+    "persist-auth": {
+      "type": "boolean",
+      "default": false,
+      "description": "Persist authentication data in localStorage across sessions."
+    },
+    "theme": {
+      "type": "string",
+      "enum": ["light", "dark"],
+      "default": "light",
+      "description": "Color theme for the documentation UI."
+    },
+    "bg-color": {
+      "type": "string",
+      "description": "Background color for the documentation page."
+    },
+    "text-color": {
+      "type": "string",
+      "description": "Primary text color."
+    },
+    "header-color": {
+      "type": "string",
+      "description": "Background color for the header bar."
+    },
+    "primary-color": {
+      "type": "string",
+      "description": "Primary accent color used for links, buttons, and highlights."
+    },
+    "nav-bg-color": {
+      "type": "string",
+      "description": "Background color for the navigation sidebar."
+    },
+    "nav-text-color": {
+      "type": "string",
+      "description": "Text color for the navigation sidebar."
+    },
+    "nav-hover-bg-color": {
+      "type": "string",
+      "description": "Hover background color for navigation items."
+    },
+    "nav-hover-text-color": {
+      "type": "string",
+      "description": "Hover text color for navigation items."
+    },
+    "nav-accent-color": {
+      "type": "string",
+      "description": "Accent color for active and highlighted navigation items."
+    },
+    "nav-accent-text-color": {
+      "type": "string",
+      "description": "Text color on accented navigation items."
+    },
+    "nav-item-spacing": {
+      "type": "string",
+      "enum": ["default", "compact", "relaxed"],
+      "default": "default",
+      "description": "Spacing between navigation items."
+    },
+    "use-path-in-nav-bar": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show endpoint paths instead of summaries in the navigation bar."
+    },
+    "info-description-headings-in-navbar": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show headings from the info description as navigation items."
+    },
+    "font-size": {
+      "type": "string",
+      "enum": ["default", "large", "largest"],
+      "default": "default",
+      "description": "Base font size for the documentation."
+    },
+    "regular-font": {
+      "type": "string",
+      "description": "Font family for regular body text."
+    },
+    "mono-font": {
+      "type": "string",
+      "description": "Font family for monospaced/code text."
+    },
+    "load-fonts": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether to load default Google fonts."
+    },
+    "render-style": {
+      "type": "string",
+      "enum": ["read", "view", "focused"],
+      "default": "read",
+      "description": "Layout rendering style. 'read' shows request/response side by side, 'view' shows them stacked, 'focused' shows one endpoint at a time."
+    },
+    "layout": {
+      "type": "string",
+      "enum": ["row", "column"],
+      "default": "row",
+      "description": "Layout direction. 'row' places nav on the side, 'column' stacks everything vertically."
+    },
+    "response-area-height": {
+      "type": "string",
+      "default": "300px",
+      "description": "Height of the response area in the Try It console."
+    },
+    "show-info": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show the API info section at the top."
+    },
+    "show-components": {
+      "type": "boolean",
+      "default": false,
+      "description": "Show the schema components section."
+    },
+    "show-header": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show the header bar."
+    },
+    "allow-authentication": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow users to configure authentication."
+    },
+    "allow-try": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show the Try It console for making live API requests."
+    },
+    "allow-spec-url-load": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow users to load a different spec URL from the UI."
+    },
+    "allow-spec-file-load": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow users to load a spec file from the local filesystem."
+    },
+    "allow-spec-file-download": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show option to download the spec file."
+    },
+    "allow-search": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show the search bar in the header."
+    },
+    "allow-advanced-search": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show advanced search options."
+    },
+    "allow-server-selection": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow users to select a server from the servers list."
+    },
+    "allow-schema-description-expand-toggle": {
+      "type": "boolean",
+      "default": true,
+      "description": "Allow toggling expansion of schema descriptions."
+    },
+    "schema-style": {
+      "type": "string",
+      "enum": ["tree", "table"],
+      "default": "tree",
+      "description": "Display style for schema definitions."
+    },
+    "schema-expand-level": {
+      "type": "integer",
+      "default": 999,
+      "description": "Number of schema levels to expand by default."
+    },
+    "schema-description-expanded": {
+      "type": "boolean",
+      "default": false,
+      "description": "Expand schema descriptions by default."
+    },
+    "schema-hide-read-only": {
+      "type": "string",
+      "enum": ["always", "never", "post,put,patch"],
+      "default": "always",
+      "description": "When to hide read-only schema properties."
+    },
+    "schema-hide-write-only": {
+      "type": "string",
+      "enum": ["always", "never"],
+      "default": "always",
+      "description": "When to hide write-only schema properties."
+    },
+    "default-schema-tab": {
+      "type": "string",
+      "enum": ["model", "example"],
+      "default": "model",
+      "description": "Default tab to show for schema sections."
+    },
+    "api-key-name": {
+      "type": "string",
+      "description": "Name of the API key header or query parameter for authentication."
+    },
+    "api-key-location": {
+      "type": "string",
+      "enum": ["header", "query"],
+      "description": "Location of the API key (header or query parameter)."
+    },
+    "api-key-value": {
+      "type": "string",
+      "description": "Default value for the API key."
+    },
+    "server-url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Default server URL to use for API requests."
+    },
+    "default-api-server": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the default API server from the servers list."
+    },
+    "fetch-credentials": {
+      "type": "string",
+      "enum": ["omit", "same-origin", "include"],
+      "default": "same-origin",
+      "description": "Credentials policy for fetch requests made from the Try It console."
+    },
+    "match-type": {
+      "type": "string",
+      "enum": ["includes", "regex"],
+      "default": "includes",
+      "description": "Search match type for filtering endpoints."
+    }
+  }
+}

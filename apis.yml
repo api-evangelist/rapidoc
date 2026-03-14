@@ -5,14 +5,23 @@ apis:
   - aid: rapidoc:rapidoc
     name: RapiDoc
     tags:
-      - API
+      - Documentation
+      - Platform
+      - Web Components
     humanURL: https://rapidocweb.com/
     properties:
       - url: https://rapidocweb.com/
         type: Documentation
-      - url: >-
-          https://raw.githubusercontent.com/api-evangelist/rapidoc/refs/heads/main/openapi/rapidoc-rapidoc-openapi.yml
+      - url: openapi/rapidoc-rapidoc-openapi.yml
         type: OpenAPI
+      - url: json-schema/rapidoc-configuration.json
+        type: JSONSchema
+      - url: json-schema/rapidoc-slots.json
+        type: JSONSchema
+      - url: json-schema/rapidoc-events.json
+        type: JSONSchema
+      - url: json-ld/rapidoc-context.jsonld
+        type: JSONLD
     description: >-
       RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger)
       2.0/3.x specifications as interactive API documentation. Drop the

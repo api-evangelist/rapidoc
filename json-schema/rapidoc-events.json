@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/rapidoc/blob/main/json-schema/rapidoc-events.json",
+  "title": "RapiDoc Events",
+  "description": "Custom events emitted by the rapi-doc web component that can be listened to for integration with application logic.",
+  "type": "object",
+  "properties": {
+    "spec-loaded": {
+      "type": "object",
+      "description": "Fired when the OpenAPI spec is successfully parsed and loaded.",
+      "properties": {
+        "detail": {
+          "type": "object",
+          "description": "The parsed OpenAPI specification object."
+        }
+      }
+    },
+    "before-try": {
+      "type": "object",
+      "description": "Fired before a Try It request is sent. Can be used to modify the request.",
+      "properties": {
+        "detail": {
+          "type": "object",
+          "description": "Request details including URL, method, headers, and body."
+        }
+      }
+    },
+    "after-try": {
+      "type": "object",
+      "description": "Fired after a Try It request completes. Contains the response data.",
+      "properties": {
+        "detail": {
+          "type": "object",
+          "description": "Response details including status, headers, and body."
+        }
+      }
+    },
+    "api-server-change": {
+      "type": "object",
+      "description": "Fired when the user selects a different API server from the server list.",
+      "properties": {
+        "detail": {
+          "type": "object",
+          "properties": {
+            "selectedServer": {
+              "type": "object",
+              "description": "The newly selected server object from the spec."
+            }
+          }
+        }
+      }
+    },
+    "before-render": {
+      "type": "object",
+      "description": "Fired before the component renders the spec. Can be used to modify the spec before display.",
+      "properties": {
+        "detail": {
+          "type": "object",
+          "description": "The spec data about to be rendered."
+        }
+      }
+    }
+  }
+}

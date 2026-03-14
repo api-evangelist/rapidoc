@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/rapidoc/blob/main/json-schema/rapidoc-slots.json",
+  "title": "RapiDoc Slots",
+  "description": "Named slots available in the rapi-doc web component where custom HTML content can be injected at predefined locations within the documentation UI.",
+  "type": "object",
+  "properties": {
+    "logo": {
+      "type": "string",
+      "description": "Slot for a custom logo image displayed in the navigation header."
+    },
+    "header": {
+      "type": "string",
+      "description": "Slot for custom header content placed in the header bar area."
+    },
+    "footer": {
+      "type": "string",
+      "description": "Slot for custom footer content placed at the bottom of the documentation."
+    },
+    "nav-logo": {
+      "type": "string",
+      "description": "Slot for a custom logo in the navigation sidebar."
+    },
+    "overview": {
+      "type": "string",
+      "description": "Slot for custom content displayed in the API overview/info section."
+    },
+    "servers": {
+      "type": "string",
+      "description": "Slot for custom content in the servers section."
+    },
+    "auth": {
+      "type": "string",
+      "description": "Slot for custom content in the authentication section."
+    },
+    "tag--{tag-name}": {
+      "type": "string",
+      "description": "Dynamic slot for injecting custom content before a specific tag group, where {tag-name} is the tag's name in lowercase with spaces replaced by hyphens."
+    },
+    "endpoint--{method}--{path}": {
+      "type": "string",
+      "description": "Dynamic slot for injecting custom content before a specific endpoint."
+    }
+  }
+}
