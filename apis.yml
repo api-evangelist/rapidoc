@@ -10,6 +10,9 @@ apis:
     properties:
       - url: https://rapidocweb.com/
         type: Documentation
+      - url: >-
+          https://raw.githubusercontent.com/api-evangelist/rapidoc/refs/heads/main/openapi/rapidoc-rapidoc-openapi.yml
+        type: OpenAPI
     description: >-
       RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger)
       2.0/3.x specifications as interactive API documentation. Drop the
@@ -30,7 +33,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-01-08'
-modified: '2026-01-04'
+modified: '2026-03-14'
 position: Consumer
 description: >-
   RapiDoc is a web component that allows developers to easily integrate

@@ -1,0 +1,91 @@
+openapi: 3.1.0
+info:
+  title: RapiDoc API
+  description: >-
+    RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger)
+    2.0/3.x specifications as interactive API documentation. This OpenAPI
+    specification represents the conceptual API surface of the RapiDoc web
+    component, including its configuration attributes, methods, events, and
+    slots. RapiDoc is a client-side web component and does not expose a
+    traditional REST API. It is configured via HTML attributes and JavaScript
+    methods on the <rapi-doc> custom element.
+  version: 9.3.4
+  contact:
+    name: RapiDoc
+    url: https://rapidocweb.com/
+  license:
+    name: MIT
+    url: https://github.com/rapi-doc/RapiDoc/blob/master/LICENSE
+externalDocs:
+  description: RapiDoc API Reference
+  url: https://rapidocweb.com/api.html
+servers:
+  - url: https://rapidocweb.com
+    description: RapiDoc Documentation Site
+tags:
+  - name: Configuration
+    description: >-
+      RapiDoc web component configuration attributes for general settings,
+      colors and fonts, navigation bar, layout, sections, schema, and API
+      server options.
+  - name: Methods
+    description: >-
+      JavaScript methods available on the rapi-doc custom element for
+      programmatic control.
+  - name: Events
+    description: >-
+      Custom events emitted by the rapi-doc element that can be listened to
+      for integration with application logic.
+  - name: Slots
+    description: >-
+      Named slots in the rapi-doc element where custom HTML content can be
+      injected at predefined locations.
+paths:
+  /api.html:
+    get:
+      operationId: getApiReference
+      summary: Get RapiDoc API Reference
+      description: >-
+        Returns the RapiDoc API reference page documenting all available
+        attributes, methods, events, and slots for the rapi-doc web component.
+      tags:
+        - Configuration
+      responses:
+        '200':
+          description: Successful response returning the API reference page.
+          content:
+            text/html:
+              schema:
+                type: string
+  /examples.html:
+    get:
+      operationId: getExamples
+      summary: Get RapiDoc Examples and Demos
+      description: >-
+        Returns the RapiDoc examples and demo page showcasing various
+        configurations and use cases.
+      tags:
+        - Configuration
+      responses:
+        '200':
+          description: Successful response returning the examples page.
+          content:
+            text/html:
+              schema:
+                type: string
+  /quickstart.html:
+    get:
+      operationId: getQuickStart
+      summary: Get RapiDoc Quick Start Guide
+      description: >-
+        Returns the RapiDoc quick start guide with instructions for
+        integrating the web component.
+      tags:
+        - Configuration
+      responses:
+        '200':
+          description: Successful response returning the quick start page.
+          content:
+            text/html:
+              schema:
+                type: string
