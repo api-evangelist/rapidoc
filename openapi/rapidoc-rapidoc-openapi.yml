@@ -28,18 +28,6 @@ tags:
       RapiDoc web component configuration attributes for general settings,
       colors and fonts, navigation bar, layout, sections, schema, and API
       server options.
-  - name: Methods
-    description: >-
-      JavaScript methods available on the rapi-doc custom element for
-      programmatic control.
-  - name: Events
-    description: >-
-      Custom events emitted by the rapi-doc element that can be listened to
-      for integration with application logic.
-  - name: Slots
-    description: >-
-      Named slots in the rapi-doc element where custom HTML content can be
-      injected at predefined locations.
 paths:
   /api.html:
     get:
