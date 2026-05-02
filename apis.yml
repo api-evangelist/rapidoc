@@ -37,7 +37,7 @@ type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2025-01-08'
-modified: '2026-03-14'
+modified: '2026-04-28'
 position: Consumer
 description: >-
   RapiDoc is a web component that allows developers to easily integrate interactive

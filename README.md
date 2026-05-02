@@ -16,7 +16,7 @@ RapiDoc is a web component that allows developers to easily integrate interactiv
 ## Timestamps
 
 - **Created:** 2025-01-08 
-- **Modified:** 2026-03-14 
+- **Modified:** 2026-04-28 
 
 ## APIs
 
