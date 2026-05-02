@@ -1,0 +1,49 @@
+extends: spectral:oas
+rules:
+  rapidoc-operation-ids-camel-case:
+    description: All operationIds must use camelCase.
+    message: "OperationId '{{value}}' must be camelCase."
+    severity: warn
+    given: "$.paths[*][*].operationId"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[a-z][a-zA-Z0-9]*$"
+
+  rapidoc-tags-title-case:
+    description: All tags must use Title Case.
+    message: "Tag '{{value}}' must use Title Case."
+    severity: warn
+    given: "$.paths[*][*].tags[*]"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[A-Z][a-zA-Z ]*$"
+
+  rapidoc-operations-have-summaries:
+    description: All operations should have a summary.
+    message: "Operation at '{{path}}' should have a summary."
+    severity: warn
+    given: "$.paths[*][*]"
+    then:
+      field: summary
+      function: truthy
+
+  rapidoc-info-version-semver:
+    description: API info version should follow semantic versioning.
+    message: "API version '{{value}}' should follow semver format (e.g., 9.3.4)."
+    severity: hint
+    given: "$.info.version"
+    then:
+      function: pattern
+      functionOptions:
+        match: "^[0-9]+\\.[0-9]+\\.[0-9]"
+
+  rapidoc-response-200-for-get:
+    description: GET operations must define a 200 response.
+    message: "GET operation at '{{path}}' must define a 200 response."
+    severity: error
+    given: "$.paths[*].get.responses"
+    then:
+      field: 200
+      function: truthy

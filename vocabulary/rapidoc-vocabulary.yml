@@ -1,0 +1,156 @@
+---
+name: RapiDoc Vocabulary
+description: >-
+  Domain vocabulary for the RapiDoc web component, covering OpenAPI documentation
+  rendering, web component configuration, theming, authentication integration,
+  and developer experience concepts.
+created: "2026-05-02"
+modified: "2026-05-02"
+tags:
+  - Documentation
+  - Web Components
+  - OpenAPI
+  - Platform
+
+terms:
+  - term: Web Component
+    definition: >-
+      A set of web platform APIs that allow creation of reusable custom HTML elements
+      with encapsulated functionality. RapiDoc is implemented as a web component using
+      the Custom Elements and Shadow DOM specifications, allowing it to be dropped into
+      any web page without framework dependencies.
+    related:
+      - Custom Element
+      - Shadow DOM
+
+  - term: rapi-doc Element
+    definition: >-
+      The Custom HTML Element provided by the RapiDoc library. It is used as
+      <rapi-doc spec-url="..."></rapi-doc> in HTML to render an OpenAPI specification
+      as interactive documentation. Attributes control appearance, behavior, and
+      authentication.
+    synonyms:
+      - RapiDoc Component
+      - rapi-doc
+    related:
+      - Web Component
+      - OpenAPI
+
+  - term: spec-url
+    definition: >-
+      The required HTML attribute on the <rapi-doc> element that points to an OpenAPI
+      2.0 (Swagger) or 3.x specification file (JSON or YAML). This is the primary
+      configuration attribute.
+    related:
+      - rapi-doc Element
+      - OpenAPI
+
+  - term: Render Style
+    definition: >-
+      Controls how the API documentation is rendered. Modes include: 'read' (optimized
+      for reading, no Try It), 'view' (full UI with Try It), and 'focused' (single
+      endpoint at a time, like a wizard).
+    related:
+      - Layout
+      - rapi-doc Element
+
+  - term: Layout
+    definition: >-
+      The structural arrangement of the RapiDoc UI. 'row' displays navigation
+      on the left with content on the right. 'column' displays everything stacked
+      vertically.
+    related:
+      - Render Style
+
+  - term: Try It Console
+    definition: >-
+      The built-in HTTP request testing UI within RapiDoc. When allow-try is true,
+      users can fill in parameters and request bodies and execute live API calls
+      directly from the documentation page.
+    synonyms:
+      - Try It
+      - Request Console
+    related:
+      - Authentication
+      - before-try Event
+
+  - term: Slot
+    definition: >-
+      An HTML slot is a placeholder inside a web component where developers can inject
+      custom content. RapiDoc provides named slots including logo, header, footer,
+      nav-logo, and overview for customizing the documentation layout.
+    synonyms:
+      - HTML Slot
+      - Named Slot
+    related:
+      - rapi-doc Element
+
+  - term: Theme
+    definition: >-
+      The overall color mode for the RapiDoc UI: 'light' (white background) or
+      'dark' (dark background). Individual colors can be further overridden via
+      bg-color, text-color, primary-color, and nav-* color attributes.
+    related:
+      - primary-color
+      - rapi-doc Element
+
+  - term: before-try Event
+    definition: >-
+      A JavaScript CustomEvent fired by RapiDoc just before the Try It request
+      is sent. Developers listen for this event to inject authentication tokens
+      or modify request headers programmatically.
+    related:
+      - Try It Console
+      - after-try Event
+
+  - term: after-try Event
+    definition: >-
+      A JavaScript CustomEvent fired by RapiDoc after a Try It request completes.
+      Contains the Fetch Response object for custom response handling or logging.
+    related:
+      - before-try Event
+      - Try It Console
+
+  - term: spec-loaded Event
+    definition: >-
+      A JavaScript CustomEvent fired when RapiDoc has finished loading and parsing
+      the OpenAPI specification. The event detail contains the parsed spec object.
+    related:
+      - rapi-doc Element
+      - OpenAPI
+
+  - term: API Key Authentication
+    definition: >-
+      RapiDoc supports pre-filling API key credentials via the api-key-name,
+      api-key-location (header or query), and api-key-value attributes. These
+      are used to authenticate Try It requests automatically.
+    related:
+      - Try It Console
+      - Bearer Authentication
+
+  - term: Bearer Authentication
+    definition: >-
+      RapiDoc supports bearer token authentication in the Try It console. Tokens
+      can be provided through the authentication UI or injected via the before-try
+      event for automated integration.
+    related:
+      - API Key Authentication
+      - Try It Console
+
+  - term: persist-auth
+    definition: >-
+      When set to true, RapiDoc stores the user's authentication credentials in
+      the browser's localStorage so they persist across page reloads. Off by default
+      for security.
+    related:
+      - API Key Authentication
+      - Bearer Authentication
+
+  - term: Server Selection
+    definition: >-
+      RapiDoc can display a dropdown allowing users to switch between API servers
+      defined in the OpenAPI spec's servers array. Controlled by allow-server-selection
+      and triggers the api-server-change event.
+    related:
+      - rapi-doc Element
+      - OpenAPI

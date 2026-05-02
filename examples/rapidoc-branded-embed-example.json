@@ -1,0 +1,17 @@
+{
+  "description": "Branded RapiDoc embed with custom colors and authentication pre-fill",
+  "code": {
+    "html": "<!doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <script type=\"module\" src=\"https://unpkg.com/rapidoc/dist/rapidoc-min.js\"></script>\n</head>\n<body>\n    <rapi-doc\n        spec-url=\"/openapi.yaml\"\n        primary-color=\"#FF6B35\"\n        bg-color=\"#FFFFFF\"\n        text-color=\"#333333\"\n        nav-bg-color=\"#1A1A2E\"\n        nav-text-color=\"#EAEAEA\"\n        theme=\"light\"\n        render-style=\"focused\"\n        layout=\"row\"\n        sort-tags=\"true\"\n        sort-endpoints-by=\"summary\"\n        allow-authentication=\"true\"\n        allow-try=\"true\"\n        allow-server-selection=\"true\"\n        show-info=\"true\"\n        api-key-name=\"X-API-Key\"\n        api-key-location=\"header\"\n        heading-text=\"My API Documentation\"\n    >\n        <img slot=\"logo\" src=\"/logo.png\" width=\"100\">\n    </rapi-doc>\n</body>\n</html>",
+    "attributes": {
+      "spec-url": "/openapi.yaml",
+      "primary-color": "#FF6B35",
+      "theme": "light",
+      "render-style": "focused",
+      "layout": "row",
+      "allow-authentication": "true",
+      "allow-try": "true",
+      "heading-text": "My API Documentation"
+    }
+  },
+  "notes": "Uses custom branding colors, focused render style, and a logo slot. The slot='logo' img tag is projected into the component header."
+}

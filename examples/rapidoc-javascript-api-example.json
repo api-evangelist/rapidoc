@@ -1,0 +1,8 @@
+{
+  "description": "Using RapiDoc JavaScript API to programmatically control the component",
+  "code": {
+    "javascript": "// Get reference to the rapi-doc element\nconst rapidocEl = document.getElementById('my-api-docs');\n\n// Load a new OpenAPI spec dynamically\nrapidocEl.loadSpec('https://api.example.com/openapi.json');\n\n// Listen for spec-loaded event\nrapidocEl.addEventListener('spec-loaded', (event) => {\n    console.log('Spec loaded:', event.detail);\n});\n\n// Listen for before-try event to inject auth token\nrapidocEl.addEventListener('before-try', (event) => {\n    const request = event.detail.request;\n    request.headers.append('Authorization', 'Bearer ' + getAuthToken());\n});\n\n// Listen for after-try event to process responses\nrapidocEl.addEventListener('after-try', (event) => {\n    const response = event.detail.response;\n    console.log('Response status:', response.status);\n});",
+    "html": "<rapi-doc id=\"my-api-docs\" spec-url=\"/openapi.json\"></rapi-doc>"
+  },
+  "notes": "RapiDoc fires spec-loaded, before-try, after-try, api-server-change, and before-render events for integration with surrounding application logic."
+}

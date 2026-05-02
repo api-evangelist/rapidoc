@@ -1,0 +1,13 @@
+{
+  "description": "Basic RapiDoc web component embed example",
+  "code": {
+    "html": "<!doctype html>\n<html>\n<head>\n    <meta charset=\"utf-8\">\n    <script type=\"module\" src=\"https://unpkg.com/rapidoc/dist/rapidoc-min.js\"></script>\n</head>\n<body>\n    <rapi-doc\n        spec-url=\"https://petstore3.swagger.io/api/v3/openapi.json\"\n        theme=\"dark\"\n        render-style=\"read\"\n        show-header=\"false\"\n    ></rapi-doc>\n</body>\n</html>",
+    "attributes": {
+      "spec-url": "https://petstore3.swagger.io/api/v3/openapi.json",
+      "theme": "dark",
+      "render-style": "read",
+      "show-header": "false"
+    }
+  },
+  "notes": "The minimum required attribute is spec-url pointing to a valid OpenAPI 2.0 or 3.x specification."
+}

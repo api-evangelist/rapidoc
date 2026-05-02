@@ -1,0 +1,25 @@
+{
+  "name": "RapiDoc Configuration",
+  "description": "Configuration attributes for the <rapi-doc> web component.",
+  "fields": [
+    { "name": "spec-url", "type": "string (uri)", "required": true, "description": "URL of the OpenAPI specification to render." },
+    { "name": "theme", "type": "string (enum)", "required": false, "description": "Color theme: light or dark. Default: light." },
+    { "name": "render-style", "type": "string (enum)", "required": false, "description": "Rendering style: read, view, or focused. Default: view." },
+    { "name": "layout", "type": "string (enum)", "required": false, "description": "Navigation layout: row or column. Default: row." },
+    { "name": "primary-color", "type": "string", "required": false, "description": "Accent/primary color as hex code." },
+    { "name": "bg-color", "type": "string", "required": false, "description": "Background color as hex code." },
+    { "name": "text-color", "type": "string", "required": false, "description": "Text color as hex code." },
+    { "name": "nav-bg-color", "type": "string", "required": false, "description": "Navigation sidebar background color." },
+    { "name": "heading-text", "type": "string", "required": false, "description": "Custom header heading text." },
+    { "name": "sort-tags", "type": "boolean", "required": false, "description": "Sort tags alphabetically. Default: false." },
+    { "name": "sort-endpoints-by", "type": "string (enum)", "required": false, "description": "Sort endpoints by: path, method, summary, none." },
+    { "name": "allow-try", "type": "boolean", "required": false, "description": "Show Try It console. Default: true." },
+    { "name": "allow-authentication", "type": "boolean", "required": false, "description": "Show authentication UI. Default: true." },
+    { "name": "allow-search", "type": "boolean", "required": false, "description": "Show search box. Default: true." },
+    { "name": "allow-server-selection", "type": "boolean", "required": false, "description": "Show server selection dropdown. Default: true." },
+    { "name": "persist-auth", "type": "boolean", "required": false, "description": "Persist auth data in localStorage. Default: false." },
+    { "name": "api-key-name", "type": "string", "required": false, "description": "Pre-fill API key name for authentication." },
+    { "name": "api-key-location", "type": "string (enum)", "required": false, "description": "API key location: header or query." },
+    { "name": "api-key-value", "type": "string", "required": false, "description": "Pre-fill API key value." }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "RapiDoc Slots",
+  "description": "HTML slots for injecting custom content into the <rapi-doc> web component.",
+  "fields": [
+    {
+      "name": "logo",
+      "type": "HTML Slot",
+      "description": "Replace the default RapiDoc logo in the header. Use an <img> or SVG element.",
+      "example": "<img slot='logo' src='/logo.png' width='100'>"
+    },
+    {
+      "name": "header",
+      "type": "HTML Slot",
+      "description": "Inject custom HTML into the header bar beside the heading text.",
+      "example": "<div slot='header'><button>Sign In</button></div>"
+    },
+    {
+      "name": "footer",
+      "type": "HTML Slot",
+      "description": "Inject custom HTML into the footer below the API documentation.",
+      "example": "<p slot='footer'>Copyright 2026 My Company</p>"
+    },
+    {
+      "name": "nav-logo",
+      "type": "HTML Slot",
+      "description": "Replace the logo shown at the top of the navigation sidebar.",
+      "example": "<img slot='nav-logo' src='/nav-logo.png'>"
+    },
+    {
+      "name": "overview",
+      "type": "HTML Slot",
+      "description": "Inject custom HTML at the top of the Overview section, before API info.",
+      "example": "<div slot='overview'><p>Welcome to our API!</p></div>"
+    }
+  ]
+}

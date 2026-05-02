@@ -1,0 +1,36 @@
+{
+  "name": "RapiDoc Events",
+  "description": "JavaScript events emitted by the <rapi-doc> web component.",
+  "fields": [
+    {
+      "name": "spec-loaded",
+      "type": "CustomEvent",
+      "description": "Fired after the OpenAPI specification has been loaded and parsed.",
+      "detail": { "spec": "Parsed OpenAPI specification object" }
+    },
+    {
+      "name": "before-try",
+      "type": "CustomEvent",
+      "description": "Fired before the Try It request is sent. Allows modifying the request (e.g., injecting auth headers).",
+      "detail": { "request": "Fetch Request object that can be modified" }
+    },
+    {
+      "name": "after-try",
+      "type": "CustomEvent",
+      "description": "Fired after the Try It request completes with the response.",
+      "detail": { "response": "Fetch Response object", "responseText": "Response body as text" }
+    },
+    {
+      "name": "api-server-change",
+      "type": "CustomEvent",
+      "description": "Fired when the user selects a different server from the server dropdown.",
+      "detail": { "selectedServer": "URL of the newly selected server" }
+    },
+    {
+      "name": "before-render",
+      "type": "CustomEvent",
+      "description": "Fired before the component renders, useful for custom initialization logic.",
+      "detail": {}
+    }
+  ]
+}
