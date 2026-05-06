@@ -1,0 +1,124 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: RapiDoc API
+  description: RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive
+    API documentation. This OpenAPI specification represents the conceptual API surface of the RapiDoc web component, including
+    its configuration attributes, methods, events, and slots. RapiDoc is a client-side web component and does not expose a
+    traditional REST API. It is configured via HTML attributes and JavaScript methods on the <rapi-doc> custom element.
+  tags:
+  - Rapidoc
+  - API
+  created: '2026-05-06'
+  modified: '2026-05-06'
+capability:
+  consumes:
+  - type: http
+    namespace: rapidoc
+    baseUri: https://rapidocweb.com
+    description: RapiDoc API HTTP API.
+    resources:
+    - name: api-html
+      path: /api.html
+      operations:
+      - name: getapireference
+        method: GET
+        description: Get RapiDoc API Reference
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: examples-html
+      path: /examples.html
+      operations:
+      - name: getexamples
+        method: GET
+        description: Get RapiDoc Examples and Demos
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    - name: quickstart-html
+      path: /quickstart.html
+      operations:
+      - name: getquickstart
+        method: GET
+        description: Get RapiDoc Quick Start Guide
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+  exposes:
+  - type: rest
+    port: 8080
+    namespace: rapidoc-rest
+    description: REST adapter for RapiDoc API.
+    resources:
+    - path: /api.html
+      name: getapireference
+      operations:
+      - method: GET
+        name: getapireference
+        description: Get RapiDoc API Reference
+        call: rapidoc.getapireference
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /examples.html
+      name: getexamples
+      operations:
+      - method: GET
+        name: getexamples
+        description: Get RapiDoc Examples and Demos
+        call: rapidoc.getexamples
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /quickstart.html
+      name: getquickstart
+      operations:
+      - method: GET
+        name: getquickstart
+        description: Get RapiDoc Quick Start Guide
+        call: rapidoc.getquickstart
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    port: 9090
+    namespace: rapidoc-mcp
+    transport: http
+    description: MCP adapter for RapiDoc API for AI agent use.
+    tools:
+    - name: getapireference
+      description: Get RapiDoc API Reference
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rapidoc.getapireference
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: getexamples
+      description: Get RapiDoc Examples and Demos
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rapidoc.getexamples
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: getquickstart
+      description: Get RapiDoc Quick Start Guide
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: rapidoc.getquickstart
+      outputParameters:
+      - type: object
+        mapping: $.
