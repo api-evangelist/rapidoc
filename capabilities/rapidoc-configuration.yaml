@@ -1,23 +1,25 @@
 naftiko: 1.0.0-alpha2
 info:
-  label: RapiDoc API
-  description: RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive
-    API documentation. This OpenAPI specification represents the conceptual API surface of the RapiDoc web component, including
-    its configuration attributes, methods, events, and slots. RapiDoc is a client-side web component and does not expose a
-    traditional REST API. It is configured via HTML attributes and JavaScript methods on the <rapi-doc> custom element.
+  label: RapiDoc API — Configuration
+  description: 'RapiDoc API — Configuration. 3 operations. Lead operation: Get RapiDoc API Reference. Self-contained Naftiko
+    capability covering one Rapidoc business surface.'
   tags:
   - Rapidoc
-  - API
-  created: '2026-05-06'
-  modified: '2026-05-06'
+  - Configuration
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    RAPIDOC_API_KEY: RAPIDOC_API_KEY
 capability:
   consumes:
   - type: http
-    namespace: rapidoc
+    namespace: rapidoc-configuration
     baseUri: https://rapidocweb.com
-    description: RapiDoc API HTTP API.
+    description: RapiDoc API — Configuration business capability. Self-contained, no shared references.
     resources:
-    - name: api-html
+    - name: api.html
       path: /api.html
       operations:
       - name: getapireference
@@ -28,7 +30,7 @@ capability:
         - name: result
           type: object
           value: $.
-    - name: examples-html
+    - name: examples.html
       path: /examples.html
       operations:
       - name: getexamples
@@ -39,7 +41,7 @@ capability:
         - name: result
           type: object
           value: $.
-    - name: quickstart-html
+    - name: quickstart.html
       path: /quickstart.html
       operations:
       - name: getquickstart
@@ -52,73 +54,78 @@ capability:
           value: $.
   exposes:
   - type: rest
+    namespace: rapidoc-configuration-rest
     port: 8080
-    namespace: rapidoc-rest
-    description: REST adapter for RapiDoc API.
+    description: REST adapter for RapiDoc API — Configuration. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
     resources:
-    - path: /api.html
-      name: getapireference
+    - path: /v1/api-html
+      name: api-html
+      description: REST surface for api.html.
       operations:
       - method: GET
         name: getapireference
         description: Get RapiDoc API Reference
-        call: rapidoc.getapireference
+        call: rapidoc-configuration.getapireference
         outputParameters:
         - type: object
           mapping: $.
-    - path: /examples.html
-      name: getexamples
+    - path: /v1/examples-html
+      name: examples-html
+      description: REST surface for examples.html.
       operations:
       - method: GET
         name: getexamples
         description: Get RapiDoc Examples and Demos
-        call: rapidoc.getexamples
+        call: rapidoc-configuration.getexamples
         outputParameters:
         - type: object
           mapping: $.
-    - path: /quickstart.html
-      name: getquickstart
+    - path: /v1/quickstart-html
+      name: quickstart-html
+      description: REST surface for quickstart.html.
       operations:
       - method: GET
         name: getquickstart
         description: Get RapiDoc Quick Start Guide
-        call: rapidoc.getquickstart
+        call: rapidoc-configuration.getquickstart
         outputParameters:
         - type: object
           mapping: $.
   - type: mcp
+    namespace: rapidoc-configuration-mcp
     port: 9090
-    namespace: rapidoc-mcp
     transport: http
-    description: MCP adapter for RapiDoc API for AI agent use.
+    description: MCP adapter for RapiDoc API — Configuration. One tool per consumed operation, routed inline through this
+      capability's consumes block.
     tools:
-    - name: getapireference
+    - name: get-rapidoc-api-reference
       description: Get RapiDoc API Reference
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: rapidoc.getapireference
+      call: rapidoc-configuration.getapireference
       outputParameters:
       - type: object
         mapping: $.
-    - name: getexamples
+    - name: get-rapidoc-examples-and-demos
       description: Get RapiDoc Examples and Demos
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: rapidoc.getexamples
+      call: rapidoc-configuration.getexamples
       outputParameters:
       - type: object
         mapping: $.
-    - name: getquickstart
+    - name: get-rapidoc-quick-start-guide
       description: Get RapiDoc Quick Start Guide
       hints:
         readOnly: true
         destructive: false
         idempotent: true
-      call: rapidoc.getquickstart
+      call: rapidoc-configuration.getquickstart
       outputParameters:
       - type: object
         mapping: $.
