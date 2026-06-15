@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "RapiDoc API",
+    "version": "9.3.4"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Configuration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get RapiDoc API Reference",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rapidocweb.com/api.html"
+          },
+          "docs": "Returns the RapiDoc API reference page documenting all available attributes, methods, events, and slots for the rapi-doc web component."
+        },
+        {
+          "info": {
+            "name": "Get RapiDoc Examples and Demos",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rapidocweb.com/examples.html"
+          },
+          "docs": "Returns the RapiDoc examples and demo page showcasing various configurations and use cases."
+        },
+        {
+          "info": {
+            "name": "Get RapiDoc Quick Start Guide",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://rapidocweb.com/quickstart.html"
+          },
+          "docs": "Returns the RapiDoc quick start guide with instructions for integrating the web component."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

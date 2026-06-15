@@ -1,0 +1,242 @@
+{
+  "item": [
+    {
+      "id": "a1d20629-0d84-4cc2-96ec-53e5891c6436",
+      "name": "Configuration",
+      "description": {
+        "content": "RapiDoc web component configuration attributes for general settings, colors and fonts, navigation bar, layout, sections, schema, and API server options.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "699d2a82-0369-4d4a-8cf0-400dc7bd5d80",
+          "name": "Get RapiDoc API Reference",
+          "request": {
+            "name": "Get RapiDoc API Reference",
+            "description": {
+              "content": "Returns the RapiDoc API reference page documenting all available attributes, methods, events, and slots for the rapi-doc web component.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api.html"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9e5a9afe-6d0e-4ea5-8fc9-58048b0bee85",
+              "name": "Successful response returning the API reference page.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api.html"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c6b8e9b3-4d47-4b12-9d8c-8a87e7ff2018",
+          "name": "Get RapiDoc Examples and Demos",
+          "request": {
+            "name": "Get RapiDoc Examples and Demos",
+            "description": {
+              "content": "Returns the RapiDoc examples and demo page showcasing various configurations and use cases.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "examples.html"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9e36afa8-856a-4b6e-baaf-07cbf2ef69ad",
+              "name": "Successful response returning the examples page.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "examples.html"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "7d6c63f0-1826-4020-8b32-00414185cb60",
+          "name": "Get RapiDoc Quick Start Guide",
+          "request": {
+            "name": "Get RapiDoc Quick Start Guide",
+            "description": {
+              "content": "Returns the RapiDoc quick start guide with instructions for integrating the web component.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "quickstart.html"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/html"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "543737d4-3a49-4a17-97cc-c35fc846848b",
+              "name": "Successful response returning the quick start page.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "quickstart.html"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/html"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/html"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://rapidocweb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1d7376e4-de3f-45e1-ad8f-89f2f36068e3",
+    "name": "RapiDoc API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive API documentation. This OpenAPI specification represents the conceptual API surface of the RapiDoc web component, including its configuration attributes, methods, events, and slots. RapiDoc is a client-side web component and does not expose a traditional REST API. It is configured via HTML attributes and JavaScript methods on the <rapi-doc> custom element.\n\nContact Support:\n Name: RapiDoc",
+      "type": "text/plain"
+    }
+  }
+}
