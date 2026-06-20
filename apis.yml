@@ -7,7 +7,7 @@ description: >-
   authentication methods, response validation, and custom theming options to tailor the documentation to a specific
   brand or project.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Documentation
   - Platform
