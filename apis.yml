@@ -53,11 +53,11 @@ apis:
         url: json-structure/rapidoc-events-structure.json
       - type: JSONStructure
         url: json-structure/rapidoc-slots-structure.json
-      - type: Example
+      - type: Examples
         url: examples/rapidoc-basic-embed-example.json
-      - type: Example
+      - type: Examples
         url: examples/rapidoc-branded-embed-example.json
-      - type: Example
+      - type: Examples
         url: examples/rapidoc-javascript-api-example.json
       - type: SpectralRules
         url: rules/rapidoc-rules.yml
