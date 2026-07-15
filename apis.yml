@@ -62,6 +62,8 @@ apis:
       - type: SpectralRules
         url: rules/rapidoc-rules.yml
 common:
+  - type: AgenticAccess
+    url: agentic-access/rapidoc-agentic-access.yml
   - type: DomainSecurity
     url: security/rapidoc-domain-security.yml
   - type: LinkedIn
