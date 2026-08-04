@@ -1,0 +1,14 @@
+{
+  "provider": "rapidoc",
+  "sources": [
+    "rapidoc-configuration-api-openapi.yml"
+  ],
+  "outputs": [
+    "rapidoc-configuration-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
