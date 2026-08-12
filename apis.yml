@@ -68,6 +68,9 @@ apis:
   - type: SpectralRules
     url: rules/rapidoc-rules.yml
 common:
+  - type: License
+    name: MIT
+    url: https://github.com/rapi-doc/RapiDoc/blob/master/LICENSE
   - type: AgenticAccess
     url: agentic-access/rapidoc-agentic-access.yml
   - type: DomainSecurity
