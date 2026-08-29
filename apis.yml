@@ -7,6 +7,19 @@ description: >-
   authentication methods, response validation, and custom theming options to tailor the documentation to a specific
   brand or project.
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: true
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -68,6 +81,12 @@ apis:
   - type: SpectralRules
     url: rules/rapidoc-rules.yml
 common:
+  - type: IssueTracker
+    url: https://github.com/rapi-doc/RapiDoc/issues
+  - type: Releases
+    url: https://github.com/rapi-doc/RapiDoc/releases
+  - type: ContributionGuide
+    url: https://github.com/rapi-doc/RapiDoc/blob/master/CONTRIBUTING.md
   - type: License
     name: MIT
     url: https://github.com/rapi-doc/RapiDoc/blob/master/LICENSE
