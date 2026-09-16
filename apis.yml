@@ -1,11 +1,10 @@
 aid: rapidoc
 name: RapiDoc
-description: >-
-  RapiDoc is a web component that allows developers to easily integrate interactive documentation for their APIs. It
-  provides a user-friendly interface for exploring and testing API endpoints, displaying detailed information about
-  request and response parameters, and offering code examples in multiple programming languages. RapiDoc also supports
-  authentication methods, response validation, and custom theming options to tailor the documentation to a specific
-  brand or project.
+description: RapiDoc is a web component that allows developers to easily integrate interactive documentation
+  for their APIs. It provides a user-friendly interface for exploring and testing API endpoints, displaying
+  detailed information about request and response parameters, and offering code examples in multiple programming
+  languages. RapiDoc also supports authentication methods, response validation, and custom theming options
+  to tailor the documentation to a specific brand or project.
 type: Index
 deliveryModel:
   model: self-hosted
@@ -34,22 +33,21 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rapidoc.png
 tags:
-  - Documentation
-  - Platform
-  - Web Components
-  - OpenAPI
+- Documentation
+- Platform
+- Web Components
+- OpenAPI
 access: 3rd-Party
 position: Consuming
 created: '2025-01-08'
-modified: '2026-05-19'
+modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/rapidoc/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 apis:
 - aid: rapidoc:rapidoc-configuration-api
   name: RapiDoc Configuration API
-  description: >-
-    RapiDoc web component configuration attributes for general settings, colors and fonts, navigation
-    bar, layout, sections, schema, and API server options.
+  description: RapiDoc web component configuration attributes for general settings, colors and fonts,
+    navigation bar, layout, sections, schema, and API server options.
   humanURL: https://rapidocweb.com/
   tags:
   - Configuration
@@ -81,36 +79,38 @@ apis:
   - type: SpectralRules
     url: rules/rapidoc-rules.yml
 common:
-  - type: IssueTracker
-    url: https://github.com/rapi-doc/RapiDoc/issues
-  - type: Releases
-    url: https://github.com/rapi-doc/RapiDoc/releases
-  - type: ContributionGuide
-    url: https://github.com/rapi-doc/RapiDoc/blob/master/CONTRIBUTING.md
-  - type: License
-    name: MIT
-    url: https://github.com/rapi-doc/RapiDoc/blob/master/LICENSE
-  - type: AgenticAccess
-    url: agentic-access/rapidoc-agentic-access.yml
-  - type: DomainSecurity
-    url: security/rapidoc-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/rapidoc-app
-  - type: Documentation
-    url: https://rapidocweb.com/api.html
-    name: RapiDoc API Reference
-  - type: Examples
-    url: https://rapidocweb.com/examples.html
-    name: RapiDoc Examples and Demos
-  - type: GettingStarted
-    url: https://rapidocweb.com/quickstart.html
-    name: RapiDoc Quick Start
-  - type: GitHubRepository
-    url: https://github.com/rapi-doc/RapiDoc
-  - type: NPM
-    url: https://www.npmjs.com/package/rapidoc
-  - type: Vocabulary
-    url: vocabulary/rapidoc-vocabulary.yml
+- type: Website
+  url: https://rapidocweb.com
+- type: IssueTracker
+  url: https://github.com/rapi-doc/RapiDoc/issues
+- type: Releases
+  url: https://github.com/rapi-doc/RapiDoc/releases
+- type: ContributionGuide
+  url: https://github.com/rapi-doc/RapiDoc/blob/master/CONTRIBUTING.md
+- type: License
+  name: MIT
+  url: https://github.com/rapi-doc/RapiDoc/blob/master/LICENSE
+- type: AgenticAccess
+  url: agentic-access/rapidoc-agentic-access.yml
+- type: DomainSecurity
+  url: security/rapidoc-domain-security.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rapidoc-app
+- type: Documentation
+  url: https://rapidocweb.com/api.html
+  name: RapiDoc API Reference
+- type: Examples
+  url: https://rapidocweb.com/examples.html
+  name: RapiDoc Examples and Demos
+- type: GettingStarted
+  url: https://rapidocweb.com/quickstart.html
+  name: RapiDoc Quick Start
+- type: GitHubRepository
+  url: https://github.com/rapi-doc/RapiDoc
+- type: NPM
+  url: https://www.npmjs.com/package/rapidoc
+- type: Vocabulary
+  url: vocabulary/rapidoc-vocabulary.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
