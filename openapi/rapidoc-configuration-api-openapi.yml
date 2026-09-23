@@ -1,7 +1,7 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: RapiDoc Configuration API
-  description: RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive API documentation. This OpenAPI specification represents the conceptual API surface of the RapiDoc web component, including its configuration attributes, methods, events, and slots. RapiDoc is a client-side web component and does not expose a traditional REST API. It is configured via HTML attributes and JavaScript methods on the <rapi-doc> custom element.
+  description: RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive API documentation. This OpenAPI specification represents the conceptual API surface of the RapiDoc web component, including its configuration attributes, methods, events, and slots. RapiDoc is a client-side web component and does not expose a traditional REST API. It is configured via HTML attributes and JavaScript methods on the custom element.
   version: 9.3.4
   contact:
     name: RapiDoc
