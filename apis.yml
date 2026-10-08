@@ -79,6 +79,12 @@ apis:
   - type: SpectralRules
     url: rules/rapidoc-rules.yml
 common:
+- type: Plans
+  url: plans/rapidoc-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/rapidoc-rate-limits.yml
+- type: FinOps
+  url: finops/rapidoc-finops.yml
 - type: Website
   url: https://rapidocweb.com
 - type: IssueTracker
