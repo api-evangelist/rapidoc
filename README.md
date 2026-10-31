@@ -1,4 +1,4 @@
-# RapiDoc (rapidoc)
+# RapiDoc
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,70 +66,157 @@
 
 RapiDoc is a web component that allows developers to easily integrate interactive documentation for their APIs. It provides a user-friendly interface for exploring and testing API endpoints, displaying detailed information about request and response parameters, and offering code examples in multiple programming languages. RapiDoc also supports authentication methods, response validation, and custom theming options to tailor the documentation to a specific brand or project.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/rapidoc/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/rapidoc/refs/heads/main/apis.yml)
+**Areas:** Documentation · Platform · Web Components · OpenAPI
 
-## Scope
+## RapiDoc on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for RapiDoc is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rapidoc/](https://apis.io/providers/rapidoc/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- Documentation
-- Platform
-- Web Components
-- OpenAPI
+- [RapiDoc Configuration API](https://apis.io/apis/rapidoc/rapidoc-configuration-api/) — RapiDoc web component configuration attributes for general settings, colors and fonts, navigation bar, layout, sections, schema, and API server options.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-01-08
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### RapiDoc
+Which operations an agent can call, which act, and which need a human in the loop.
 
-RapiDoc is a fast, embeddable web component that renders OpenAPI (Swagger) 2.0/3.x specifications as interactive API documentation. Drop the element into any web page to get a searchable, navigable UI with endpoint details, request/response schemas, examples, and code snippets. It includes a built-in "Try It" console with auth support (API key, Bearer, Basic, OAuth), server selection, and environment variables, so developers can test calls directly from the docs.
+- [Rapidoc Agentic Access](https://apis.io/agentic-access/rapidoc/rapidoc-agentic-access/)
 
-- **Human URL:** [https://rapidocweb.com/](https://rapidocweb.com/)
+#### JSON Schema (3)
 
-#### Tags
+The data models the API reads and writes.
 
-- Documentation
-- Platform
-- Web Components
-- OpenAPI
+- [RapiDoc Web Component Configuration](https://apis.io/schemas/rapidoc/rapidoc-configuration/)
+- [RapiDoc Events](https://apis.io/schemas/rapidoc/rapidoc-events/)
+- [RapiDoc Slots](https://apis.io/schemas/rapidoc/rapidoc-slots/)
 
-#### Properties
+#### JSON Structure (3)
 
-- [Documentation](https://rapidocweb.com/)
-- [OpenAPI](openapi/rapidoc-rapidoc-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/rapidoc-rapidoc.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/rapidoc-rapidoc.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [JSON Schema](json-schema/rapidoc-configuration.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/rapidoc-slots.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/rapidoc-events.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON-LD](json-ld/rapidoc-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [JSON Structure](json-structure/rapidoc-configuration-structure.json)
-- [JSON Structure](json-structure/rapidoc-events-structure.json)
-- [JSON Structure](json-structure/rapidoc-slots-structure.json)
-- [Example](examples/rapidoc-basic-embed-example.json)
-- [Example](examples/rapidoc-branded-embed-example.json)
-- [Example](examples/rapidoc-javascript-api-example.json)
-- [Spectral Rules](rules/rapidoc-rules.yml)
+Data models expressed in JSON Structure.
 
-## Common Properties
+- [Rapidoc Configuration Structure](https://apis.io/json-structure/rapidoc/rapidoc-configuration-structure/)
+- [Rapidoc Events Structure](https://apis.io/json-structure/rapidoc/rapidoc-events-structure/)
+- [Rapidoc Slots Structure](https://apis.io/json-structure/rapidoc/rapidoc-slots-structure/)
 
-- [LinkedIn](https://www.linkedin.com/company/rapidoc-app)
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Rapidoc Context](https://apis.io/jsonld/rapidoc/rapidoc-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [RapiDoc Vocabulary](https://apis.io/vocabularies/rapidoc/rapidoc-vocabulary/)
+
+#### Examples (3)
+
+Example requests and responses.
+
+- [Rapidoc Basic Embed Example](https://apis.io/examples/rapidoc/rapidoc-basic-embed-example/)
+- [Rapidoc Branded Embed Example](https://apis.io/examples/rapidoc/rapidoc-branded-embed-example/)
+- [Rapidoc Javascript Api Example](https://apis.io/examples/rapidoc/rapidoc-javascript-api-example/)
+
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [RapiDoc Configuration API](https://apis.io/collections/rapidoc/open-rapidoc-configuration-api/)
+- [RapiDoc API](https://apis.io/collections/rapidoc/open-rapidoc-rapidoc/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [RapiDoc — jsonschema rules](https://apis.io/rules/rapidoc/rapidoc-jsonschema-spectral-rules/)
+- [RapiDoc API Rules](https://apis.io/rules/rapidoc/rapidoc-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rapidoc Domain Security](https://apis.io/security/rapidoc/rapidoc-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rapidoc Plans Pricing](https://apis.io/plans/rapidoc/rapidoc-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rapidoc Rate Limits](https://apis.io/rate-limits/rapidoc/rapidoc-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Rapidoc Finops](https://apis.io/finops/rapidoc/rapidoc-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://rapidocweb.com)
 - [Documentation](https://rapidocweb.com/api.html)
-- [Examples](https://rapidocweb.com/examples.html)
-- [Getting Started](https://rapidocweb.com/quickstart.html)
-- [GitHub Repository](https://github.com/rapi-doc/RapiDoc)
-- [N P M](https://www.npmjs.com/package/rapidoc)
-- [Vocabulary](vocabulary/rapidoc-vocabulary.yml)
+- [Getting started](https://rapidocweb.com/quickstart.html)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 57.8 |
+| Contract governance | 27.3 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rapidoc/](https://apis.io/providers/rapidoc/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RapiDoc: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rapidoc/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
